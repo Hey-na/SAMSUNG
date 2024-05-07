@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        .wrap{
+            width: 100%;
+        }
+
+            /* header */
+            .header{
+                width: 1440px;
+                margin: 0 auto;
+                height: 116px;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+                .header .headerA{
+                    width: 100%;
+                    height: 50px;
+                    margin-top: 16px;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                    .headerA .logo{
+                        width: 100%;
+                        margin-left: 10px;
+                    }
+
+                    .headerA .util{
+                        width: auto;
+                        height: 50px;
+                        margin-right: 10px;
+                        cursor: pointer;
+
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
+                    }
+                        /* 검색창 글자 입력란 꾸미는 법 */
+                        .util input[type=text] {
+                            width: 330px;
+                            height: 40px;
+                            background: #F5F5F5;
+                            padding: 7px 14px;
+                            border: 0px;
+                            border-radius: 40px;
+                        }
+                        .util .user-util{
+                            display: flex;
+                        }
+                            .shopping-cart, .mypage{
+                                width: 26px;
+                                height: 26px;
+                                margin-left: 18px;
+                            }
+
+                .header .headerB{
+                    width: 100%;
+                    height: 50px;
+                    
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                    .headerB a{
+                        color: #000;
+                        font-size: 14px;
+                        letter-spacing: -0.02em;
+                        line-height: 30px;
+                        padding: 0 9px;
+                    }
+                    .headerB a:hover{
+                        background-color: black;
+                        color: white;
+                        border-radius: 32px;
+                        /* 위아래? */
+                        padding: 8px 9px;
+                    }
+
+            /* banner */
+            .banner{
+                width: 100%;
+                /* 1920px일 때 */
+                height: 810px;
+                background-image: url("https://images.samsung.com/kdp/cms_contents/362311/6d9e1bb6-8ee1-412c-a272-03da1733a015.jpg?$ORIGIN_JPG$");
+                background-size: cover;
+                background-position: center;
+            }
+
+            /* contents */
+            .contents{
+                width: 1440px;
+                margin: 0 auto;
+                height: 800px;
+                background-color: bisque;
+            }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        
+        <!-- header -->
+        <div class="header">
+
+            <!-- headerA -->
+            <div class="headerA">
+                
+                <div class="logo">
+                    <a href="https://www.samsung.com/sec/">
+                        <img src="https://www.samsung.com/sec/static/_images/gnb/logo-gnb.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="util">
+                    <div class="search">
+                        <input type="text">
+                    </div>
+
+                    <div class="user-util">
+                        <div class="shopping-cart">
+                            <img src="https://www.samsung.com/sec/static/_images/gnb/icon-26-Cart.svg" alt="">
+                        </div>
+                        <div class="mypage">
+                            <img src="https://www.samsung.com/sec/static/_images/gnb/icon-26-mypage.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- headerB -->
+            <div class="headerB">
+
+                <div class="naviA">
+                    <a href="#">AI</a>
+                    <a href="#">모바일</a>
+                    <a href="#">TV&오디오</a>
+                    <a href="#">주방가전</a>
+                    <a href="#">리빙가전</a>
+                    <a href="#">PC/주변기기</a>
+                    <a href="#">소모품</a>
+                    <a href="#">삼성케어플러스</a>
+                    <a href="#">스마트싱스</a>
+                    <a href="#">삼성닷컴추천</a>
+                    <a href="#">아울렛</a>
+                    <a href="#">#Samsung Experience</a>
+                </div>
+
+                <div class="naviB">
+                    <a href="#">고객지원</a>
+                    <a href="#">비즈니스</a>
+                    <a href="#">삼성스토어</a>
+                    <a href="#">지속가능경영</a>
+                </div>
+
+            </div>  
+        </div>
+
+        <div class="banner">
+
+        </div>
+
+        <div class="contents">
+
+        </div>
+    </div>
+</body>
+</html>
